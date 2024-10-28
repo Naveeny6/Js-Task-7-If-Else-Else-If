@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        console.log("Question-1:-")
+        console.log("\nIncome Tax Calculation Based on Income Slabs")
+
+        let income = parseInt(prompt("Enter Income: "))
+
+        if (income > 250000 && income <= 500000) {
+            console.log("5% tax for exceeding 250000")
+            let exceed = income-250000;
+            console.log(`Exceeded Amount : ${exceed}`)
+            let tax = (1/20)*exceed;
+            console.log(`Total Tax Payable : ${tax}`)
+        }
+
+        else if (income > 500000 && income <= 1000000) {
+            console.log("12500 + 20% of the amount exceeding 500000")
+            let exceed2 = income-500000;
+            console.log(`Exceeded Amount : ${exceed2}`)
+            let tax2 = (1/5)*exceed2 + 12500
+            console.log(`Total Tax Payable : ${tax2}`)
+        }
+
+        else if (income > 1000000) {
+            console.log("112500 + 30% of the amount exceeding 1000000")
+            let exceed3 = income - 1000000;
+            console.log(`Exceed Amount : ${exceed3}`)
+            let tax3 = (0.3)*exceed3 + 112500
+            console.log(`Total Tax Payable : ${tax3}`)
+
+        }
+
+        else {
+            if (income <= 250000) {
+                console.log("No Tax")
+            }
+        }
+
+        // console.log("Question-2:-")
+        // console.log("\nShipping Cost Based on Weight and Destination")
+        // let weight = parseInt(prompt("Enter Weight Of Parcel: "))
+        // let destination = prompt("Enter the destriction: ")
+
+        // if(weight<=1){
+        //     let shippingCost = (destination=="local") ? ("Shipping Cost: Local-$5") : (destination == "national") ? ("Shipping Cost:National- $8"): (destination == "international") ? ("Shipping Cost:Internatinal-$15"):"invalid destination";
+        //     console.log(shippingCost)
+        // }
+        // else if(weight > 1 && weight <= 5){
+        //     let shippingCost = (destination=="local") ? "Shipping Cost: Local-$10" : (destination == "national") ? "Shipping Cost:National- $15": (destination == "international") ? "Shipping Cost:Internatinal-$30":"invalid destination";
+        //     console.log(shippingCost)
+        // }
+        // else if(weight > 5 && weight <= 10){
+        //     let shippingCost = (destination=="local") ? "Shipping Cost: Local-$20" : (destination == "national") ? "Shipping Cost:National- $25": (destination == "international") ? "Shipping Cost:Internatinal-$50":"invalid destination";
+        //     console.log(shippingCost)
+        // }
+        // else if(weight > 10){
+        //     let shippingCost = (destination=="local") ? "Shipping Cost: Local-$30" : (destination == "national") ? "Shipping Cost:National- $35": (destination == "international") ? "Shipping Cost:Internatinal-$70":"invalid destination";
+        //     console.log(shippingCost)
+        //     console.log(`Shipping Cost: local:$30,National: $35,International: $70`)
+        // }
+
+
+        // console.log("Question-3:-")
+        // console.log("3. Electricity Bill Calculation Based on Usage");
+        // console.log("Write a program to calculate the electricity bill based on the number of units consumed:Units <= 100: $1 per unit ,Units > 100 and <= 300: $1 per unit for the first 100 units + $1.5 per unit for the next 200 units  Units > 300: $1 per unit for the first 100 units + $1.5 per unit for the next 200 units + $2 per unit beyond 300")
+
+        // let Number_of_units=+prompt("enter the number of units : ");
+        // if(Number_of_units<=100){
+        //     console.log("Total Electricity Bill Amount :",( Number_of_units)*1)
+        // }
+        // else if( Number_of_units > 100 &&  Number_of_units<=300){
+        //     console.log("Total Electricity Bill Amount : ",( Number_of_units*1)+( Number_of_units-100)*1.5)
+
+        // }
+        // else if ( Number_of_units>300){
+        //     console.log("Total Electricity Bill Amount : " ,( Number_of_units*1)+(( Number_of_units-100)*1.5)+(( Number_of_units-300)*2))
+        // }
+        
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
